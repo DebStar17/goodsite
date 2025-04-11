@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PROJECT ECHO - Recovered Research Document</title>
+		<style>
+				body {
+						font-family: 'Courier New', monospace;
+						text-align: center;
+						background: black;
+						color: white;
+						padding: 50px;
+				}
+				#pdf-container {
+						width: 80%;
+						height: 500px;
+						margin: auto;
+						border: 2px solid red;
+						box-shadow: 0px 0px 20px red;
+						position: relative;
+						background: rgba(0, 0, 0, 0.8);
+				}
+				#loading {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						font-size: 20px;
+						color: red;
+						animation: flicker 1s infinite alternate;
+				}
+				@keyframes flicker {
+						0% { opacity: 1; }
+						100% { opacity: 0.3; }
+				}
+				#static {
+						display: none;
+						width: 100%;
+						height: 100%;
+				}
+		</style>
+</head>
+<body>
+
+		<h1>PROJECT ECHO</h1>
+		<p>Recovered Research Paper - Read at your own risk</p>
+
+		<div id="pdf-container">
+				<p id="loading">Deciphering document...</p>
+				<img id="static" src="https://i.imgur.com/Fq3mF4S.gif" alt="Corrupt Data">
+		</div>
+
+		<audio id="whisper" src="https://www.myinstants.com/media/sounds/creepy-whisper.mp3" loop></audio>
+
+		<script>
+				setTimeout(() => {
+						document.getElementById('loading').style.display = 'none';
+						document.getElementById('static').style.display = 'block';
+						document.getElementById('whisper').play();
+				}, 3000); // Fake PDF corruption effect
+
+				setTimeout(() => {
+						window.location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
+				}, 5000); // 10 seconds before the inevitable rickroll
+		</script>
+
+</body>
+</html>
